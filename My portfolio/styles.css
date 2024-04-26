@@ -4,7 +4,11 @@
     font-family: "Open Sans", sans-serif;
 }
 
-/*Contenedor de inicio de mi portafolio*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Aquí empieza el contenedor de inicio de mi portafolio*/
 
 .main_container {
     position: relative;
@@ -41,6 +45,7 @@
 .introduction h1 {
     color: white;
     font-size: 2.5rem;
+    font-weight: 500;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 1.5rem;
@@ -85,47 +90,113 @@
     margin: 10px auto;
 }
 
-/*Scroll dowm(deslizar hacia abajo)*/
+/*Aquí termina el contenedor de inicio de mi portafolio*/
 
+/* Aquí empieza el Scroll dowm(deslizar hacia abajo)*/
 .scroll-down {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    cursor: pointer;
 }
 
 .scroll-down a {
     display: block;
-    width: 24px;
-    height: 24px;
-    border: 2px solid white;
-    border-radius: 50%;
+    width: 5rem;
+    height: 12rem;
     position: relative;
     animation: scrollBounce 2s infinite;
 }
 
-.scroll-down a span {
+.scroll-down a img {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 7.5rem;
+    left: -1rem;
     transform: translate(-50%, -50%);
-    border: solid white;
     border-width: 0 3px 3px 0;
-    padding: 6px;
+    padding: 2rem;
     display: block;
-    width: 10px;
-    height: 10px;
-    transform: rotate(45deg);
+    width: 2rem;
+    height: 3rem;
+    transform: rotate(1deg);
 }
 
 @keyframes scrollBounce {
     0% {
         transform: translateY(0);
     }
+
     50% {
-        transform: translateY(10px);
+        transform: translateY(13px);
     }
+
     100% {
         transform: translateY(0);
     }
+}
+
+/* Aquí empieza el Scroll dowm(deslizar hacia abajo)*/
+
+/*Aquí empieza el Navbar*/
+.Navbar {
+    background-color: #333;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+.Navbar h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: -1rem;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.Navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: -1rem;
+}
+
+.Navbar li {
+    margin-right: 20px;
+}
+
+.Navbar a {
+    color: white;
+    text-decoration: none;
+    margin-top: -1rem;
+    border-bottom: none;
+}
+
+.Navbar a.active {
+    border-bottom: 1px solid #66FCF1;
+}
+
+.Navbar a:hover {
+    border-bottom: 1px solid #66FCF1;
+    transition: border-bottom 0.3s ease;
+}
+/*Aquí termina el Navbar*/
+
+.welcome{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5rem;
 }

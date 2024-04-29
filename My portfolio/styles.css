@@ -9,16 +9,11 @@ html {
 }
 
 :root {
-    /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
     --first-color: hsl(82, 60%, 28%);
     --title-color: hsl(0, 0%, 15%);
     --text-color: hsl(0, 0%, 35%);
     --body-color: hsl(0, 0%, 95%);
     --container-color: hsl(0, 0%, 100%);
-
-    /*========== Font and typography ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
     --body-font: "Poppins", sans-serif;
     --h2-font-size: 1.25rem;
     --small-font-size: .813rem;
@@ -198,6 +193,7 @@ ul li {
 .Navbar a:hover {
     text-decoration: underline;
 }
+
 /*Aquí termina el Navbar*/
 
 /*Aquí empieza el apartado de habilidades*/
@@ -260,6 +256,13 @@ ul li {
     height: 19rem;
 }
 
+.card__article_REACT {
+    position: relative;
+    margin-top: -1.8rem;
+    overflow: hidden;
+    height: 19rem;
+}
+
 /*Contenedores individuales de cada lenguaje y framework*/
 
 
@@ -284,6 +287,13 @@ ul li {
     margin-left: 7.5rem;
 }
 
+.card__img_REACT {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 1.5rem;
+    margin-left: 7.5rem;
+}
+
 /*Imagenes de lenguajes*/
 
 .card__data_HTML {
@@ -293,7 +303,7 @@ ul li {
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
     border-radius: 1rem;
     position: absolute;
-    bottom: -7.5rem;
+    bottom: -8rem;
     left: 0;
     right: 0;
     margin-inline: auto;
@@ -319,6 +329,21 @@ ul li {
 }
 
 .card__data_JAVA {
+    width: 280px;
+    background-color: var(--container-color);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.card__data_REACT {
     width: 280px;
     background-color: var(--container-color);
     padding: 1.5rem 2rem;
@@ -372,6 +397,16 @@ ul li {
     animation: remove-overflow 2s forwards;
 }
 
+.card__article_REACT:hover .card__data_REACT {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card__article_REACT:hover {
+    animation: remove-overflow 2s forwards;
+}
+
 .card__article_HTML:not(:hover) {
     animation: show-overflow 2s forwards;
 }
@@ -393,6 +428,14 @@ ul li {
 }
 
 .card__article_JAVA:not(:hover) .card__data_JAVA {
+    animation: remove-data 1s forwards;
+}
+
+.card__article_REACT:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.card__article_REACT:not(:hover) .card__data_REACT {
     animation: remove-data 1s forwards;
 }
 
@@ -435,11 +478,147 @@ ul li {
     }
 
     50% {
-        overflow:hidden;
+        overflow: hidden;
     }
 }
 
 /*Aquí termina el apartado de habilidades*/
+
+/*Inicio de las barras de progreso de los lenguajes*/
+
+.progress_HTML {
+    height: 0.5rem;
+    width: 6rem;
+    border-color: #000;
+    border-radius: 20px;
+    transform: scale(3);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #E34E26;
+    margin-left: 6rem;
+    margin-top: 1rem;
+}
+
+.progress_HTML::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(120deg, #E34E26, #E34E26);
+    background-size: 150% 150%;
+    height: 0.5rem;
+    width: 1%;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px #EF642A;
+    animation: progress_HTML 2s linear infinite;
+}
+
+@keyframes progress_HTML {
+
+    50%,
+    100% {
+        width: 80%;
+    }
+}
+
+.progress_CSS {
+    height: 0.5rem;
+    width: 6rem;
+    border-color: #000;
+    border-radius: 20px;
+    transform: scale(3);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2D54E5;
+    margin-left: 6rem;
+    margin-top: 1rem;
+}
+
+.progress_CSS::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(120deg, #2D54E5, #2D54E5);
+    background-size: 150% 150%;
+    height: 0.5rem;
+    width: 1%;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px #2D54E5;
+    animation: progress_CSS 2s linear infinite;
+}
+
+@keyframes progress_CSS {
+
+    50%,
+    100% {
+        width: 80%;
+    }
+}
+
+.progress_JAVA {
+    height: 0.5rem;
+    width: 6rem;
+    border-color: #000;
+    border-radius: 20px;
+    transform: scale(3);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #EFD81D;
+    margin-left: 6rem;
+    margin-top: 1rem;
+}
+
+.progress_JAVA::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(120deg, #EFD81D, #EFD81D);
+    background-size: 150% 150%;
+    height: 0.5rem;
+    width: 1%;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px #EFD81D;
+    animation: progress_JAVA 2s linear infinite;
+}
+
+@keyframes progress_JAVA {
+
+    50%,
+    100% {
+        width: 40%;
+    }
+}
+
+.progress_REACT {
+    height: 0.5rem;
+    width: 6rem;
+    border-color: #000;
+    border-radius: 20px;
+    transform: scale(3);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #1399C4;
+    margin-left: 6rem;
+    margin-top: 1rem;
+}
+
+.progress_REACT::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(120deg, #1399C4, #1399C4);
+    background-size: 150% 150%;
+    height: 0.5rem;
+    width: 1%;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px #1399C4;
+    animation: progress_REACT 2s linear infinite;
+}
+
+@keyframes progress_REACT {
+
+    50%,
+    100% {
+        width: 60%;
+    }
+}
+
+/*Fin de las barras de progreso de los lenguajes*/
 
 /*Responsive*/
 

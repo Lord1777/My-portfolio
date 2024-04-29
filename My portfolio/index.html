@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="scroll-down">
-        <a href="#information"
+        <a href="#navbar"
           ><img src="../My portfolio/icons/flecha.png" alt="Flecha hacia abajo"
         /></a>
       </div>
@@ -32,11 +32,11 @@
     <!--Aquí termina el div que contiene la información principal-->
 
     <!--Aquí empieza el Navbar-->
-    <nav class="Navbar" id="information">
-      <h1 id="homeLink">César</h1>
+    <nav class="Navbar" id="navbar">
+      <h1 id="homeLink" class="home-link">César</h1>
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#skills">Habilidades</a></li>
         <li><a href="#history">Historia</a></li>
         <li><a href="#projects">Proyectos</a></li>
         <li><a href="#contact">Contacto</a></li>
@@ -47,9 +47,47 @@
     <!--Script para el hover y las transiciones-->
     <script src="script.js"></script>
 
-    <div class="welcome">
+    <div class="welcome" id="about">
       <h1>HOLA Y BIENVENIDO</h1>
-      <p>Explora mi mundo</p>
+      <p>Explora mis Habilidades</p>
+    </div>
+
+    <div class="cards_container">
+      <div class="cards">
+        <article class="card__article_HTML">
+          <img
+            src="../My portfolio/img/HTML-5.png"
+            alt="HTML image"
+            class="card__img_HTML"
+          />
+          <div class="card__data_HTML">
+            <h2 class="card__title">HTML</h2>
+
+          </div>
+        </article>
+        <article class="card__article_CSS">
+          <img
+            src="../My portfolio/img/CSS.png"
+            alt="HTML image"
+            class="card__img_CSS"
+          />
+          <div class="card__data_CSS">
+            <h2 class="card__title">CSS</h2>
+
+          </div>
+        </article>
+        <article class="card__article_JAVA">
+          <img
+            src="../My portfolio/img/JavaScript.png"
+            alt="HTML image"
+            class="card__img_JAVA"
+          />
+          <div class="card__data_JAVA">
+            <h2 class="card__title">Javascript</h2>
+
+          </div>
+        </article>
+      </div>
     </div>
   </body>
 </html>

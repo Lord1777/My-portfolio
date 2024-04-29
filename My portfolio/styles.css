@@ -8,6 +8,22 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(82, 60%, 28%);
+    --title-color: hsl(0, 0%, 15%);
+    --text-color: hsl(0, 0%, 35%);
+    --body-color: hsl(0, 0%, 95%);
+    --container-color: hsl(0, 0%, 100%);
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --h2-font-size: 1.25rem;
+    --small-font-size: .813rem;
+}
+
 /*Aquí empieza el contenedor de inicio de mi portafolio*/
 
 .main_container {
@@ -21,7 +37,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    height: 57.45rem;
+    height: 59.5rem;
 }
 
 .background-image img {
@@ -85,7 +101,6 @@ html {
 .linea {
     border: none;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.5);
     width: 50%;
     margin: 10px auto;
 }
@@ -136,11 +151,11 @@ html {
     }
 }
 
-/* Aquí empieza el Scroll dowm(deslizar hacia abajo)*/
+/* Aquí termina el Scroll dowm(deslizar hacia abajo)*/
 
 /*Aquí empieza el Navbar*/
 .Navbar {
-    background-color: #333;
+    background-color: #1A1A1A;
     width: 100%;
     height: 3rem;
     display: flex;
@@ -178,25 +193,270 @@ ul li {
 .Navbar a {
     color: white;
     text-decoration: none;
-    margin-top: -1rem;
-    border-bottom: none;
-}
-
-.Navbar a.active {
-    border-bottom: 1px solid #66FCF1;
 }
 
 .Navbar a:hover {
-    border-bottom: 1px solid #66FCF1;
-    transition: border-bottom 0.3s ease;
+    text-decoration: underline;
 }
 /*Aquí termina el Navbar*/
 
-.welcome{
-    color: white;
-    font-size: 2.5rem;
+/*Aquí empieza el apartado de habilidades*/
+.welcome h1 {
+    color: #333;
+    font-size: 2rem;
     font-weight: 500;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+
+.welcome p {
+    position: relative;
+    color: #666;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 3rem;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+
+.cards_container {
+    display: grid;
+    margin-top: 4rem;
+    margin-inline: 7rem;
+    padding-block: 5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5rem;
+    margin-left: 7rem;
+}
+
+/*Contenedores individuales de cada lenguaje y framework*/
+.card__article_HTML {
+    position: relative;
+    overflow: hidden;
+    height: 17rem;
+    margin-left: -3rem;
+    width: 28rem;
+}
+
+.card__article_CSS {
+    position: relative;
+    margin-top: -2rem;
+    overflow: hidden;
+    width: 22.7rem;
+}
+
+.card__article_JAVA {
+    position: relative;
+    margin-top: -1.8rem;
+    overflow: hidden;
+    height: 19rem;
+}
+
+/*Contenedores individuales de cada lenguaje y framework*/
+
+
+/*Imagenes de lenguajes*/
+.card__img_HTML {
+    width: 20rem;
+    border-radius: 1.5rem;
+    margin-left: 4rem;
+}
+
+.card__img_CSS {
+    width: 9rem;
+    height: 13rem;
+    border-radius: 1.5rem;
+    margin-left: 6.5rem;
+}
+
+.card__img_JAVA {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 1.5rem;
+    margin-left: 7.5rem;
+}
+
+/*Imagenes de lenguajes*/
+
+.card__data_HTML {
+    width: 280px;
+    background-color: var(--container-color);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -7.5rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+    margin-left: 3.5rem;
+}
+
+.card__data_CSS {
+    width: 280px;
+    background-color: var(--container-color);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+    margin-left: 0.65rem;
+}
+
+.card__data_JAVA {
+    width: 280px;
+    background-color: var(--container-color);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.card__title {
+    font-size: var(--h2-font-size);
+    font-weight: 500;
+    color: var(--title-color);
+    margin-bottom: .75rem;
+}
+
+/*Animaciones de los hover de las cartas*/
+
+.card__article_HTML:hover .card__data_HTML {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card__article_HTML:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.card__article_CSS:hover .card__data_CSS {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card__article_CSS:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.card__article_JAVA:hover .card__data_JAVA {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card__article_JAVA:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.card__article_HTML:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.card__article_HTML:not(:hover) .card__data_HTML {
+    animation: remove-data 1s forwards;
+}
+
+.card__article_CSS:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.card__article_CSS:not(:hover) .card__data_CSS {
+    animation: remove-data 1s forwards;
+}
+
+.card__article_JAVA:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.card__article_JAVA:not(:hover) .card__data_JAVA {
+    animation: remove-data 1s forwards;
+}
+
+/*Animaciones de las cartas*/
+
+@keyframes show-data {
+    50% {
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0% {
+        transform: translateY(-7rem);
+    }
+
+    50% {
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+
+    50% {
+        overflow:hidden;
+    }
+}
+
+/*Aquí termina el apartado de habilidades*/
+
+/*Responsive*/
+
+@media screen and (min-width:1120px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (max-width:340px) {
+    .cards_container {
+        margin-inline: 1rem;
+    }
+
+    .card__data_HTML {
+        width: 250px;
+        padding: 1rem;
+    }
 }

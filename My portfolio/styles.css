@@ -230,6 +230,7 @@ ul li {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5rem;
+    row-gap: 4rem;
     margin-left: 7rem;
 }
 
@@ -237,9 +238,11 @@ ul li {
 .card__article_HTML {
     position: relative;
     overflow: hidden;
-    height: 17rem;
+    height: 19rem;
     margin-left: -3rem;
     width: 28rem;
+    /* box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15); */
+    margin-top: -2rem;
 }
 
 .card__article_CSS {
@@ -247,6 +250,7 @@ ul li {
     margin-top: -2rem;
     overflow: hidden;
     width: 22.7rem;
+    /* box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15); */
 }
 
 .card__article_JAVA {
@@ -254,13 +258,17 @@ ul li {
     margin-top: -1.8rem;
     overflow: hidden;
     height: 19rem;
+    /* box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15); */
 }
 
 .card__article_REACT {
     position: relative;
-    margin-top: -1.8rem;
+    margin-top: 3rem;
+    margin-left: -3.3rem;
     overflow: hidden;
     height: 19rem;
+    /* box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15); */
+    width: 28rem;
 }
 
 /*Contenedores individuales de cada lenguaje y framework*/
@@ -271,20 +279,22 @@ ul li {
     width: 20rem;
     border-radius: 1.5rem;
     margin-left: 4rem;
+    margin-top: 1.5rem;
 }
 
 .card__img_CSS {
-    width: 9rem;
-    height: 13rem;
+    width: 11rem;
+    height: 11rem;
     border-radius: 1.5rem;
-    margin-left: 6.5rem;
+    margin-left: 5.8rem;
+    margin-top: 1.5rem;
 }
 
 .card__img_JAVA {
     width: 13rem;
     height: 13rem;
     border-radius: 1.5rem;
-    margin-left: 7.5rem;
+    margin-left: 8rem;
 }
 
 .card__img_REACT {
@@ -319,7 +329,7 @@ ul li {
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
     border-radius: 1rem;
     position: absolute;
-    bottom: -7rem;
+    bottom: -7.5rem;
     left: 0;
     right: 0;
     margin-inline: auto;
@@ -335,7 +345,7 @@ ul li {
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
     border-radius: 1rem;
     position: absolute;
-    bottom: -7rem;
+    bottom: -8rem;
     left: 0;
     right: 0;
     margin-inline: auto;
@@ -350,7 +360,7 @@ ul li {
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
     border-radius: 1rem;
     position: absolute;
-    bottom: -7rem;
+    bottom: -8rem;
     left: 0;
     right: 0;
     margin-inline: auto;

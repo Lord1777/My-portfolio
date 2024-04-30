@@ -158,6 +158,13 @@ html {
     justify-content: space-around;
     padding-top: 20px;
     font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.Navbar.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .Navbar h1 {
@@ -216,7 +223,7 @@ ul li {
     font-weight: 500;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .welcome p {
@@ -974,6 +981,7 @@ ul li {
         width: 60%;
     }
 }
+
 /*Fin de las barras de progreso de los lenguajes*/
 
 /*Inicio del apartado Historia*/
@@ -982,11 +990,11 @@ ul li {
     background-color: #F6F6F6;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     padding: 4rem;
 }
 
-.history_container h2{
+.history_container h2 {
     color: #333;
     font-size: 2rem;
     font-weight: 500;
@@ -1015,7 +1023,7 @@ ul li {
     position: absolute;
     left: 0;
     right: 0;
-    top: 137.5rem;
+    top: 139.5rem;
     margin: 0 auto;
     height: 1px;
     width: 50px;
@@ -1023,111 +1031,144 @@ ul li {
 }
 
 .education_container {
-	width: 90%;
-	max-width: 1200px;
-	margin: 100px auto;
-	display: flex;
-	flex-direction: column;
-	position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .education_container::after {
-	content: "";
-	width: 2px;
-	height: 100%;
-	background: #1b3231;
-	position: absolute;
-	top: 0;
-	left: calc(50% - 1px);
-	z-index: 1;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #1b3231;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px);
+    z-index: 1;
+    box-shadow: 0 0 10px #666;
 }
 
 .history {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 200px;
-	position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    position: relative;
 }
 
 .history::after {
-	content: "";
-	display: block;
-	width: 14px;
-	height: 14px;
-	border-radius: 100px;
-	background: #DCDFD9;
-	border: 2px solid #1b3231;
-	position: absolute;
-	z-index: 2;
-	top: calc(50% - 9px);
-	left: calc(50% - 9px);
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 100px;
+    background: #DCDFD9;
+    border: 2px solid #1b3231;
+    position: absolute;
+    z-index: 2;
+    top: calc(50% - 9px);
+    left: calc(50% - 9px);
 }
 
 .info {
-	display: flex;
-	align-items: center;
-	justify-content: start;
-	width: calc(42% + 20px);
-	font-size: 32px;
-	font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: calc(42% + 20px);
+    font-size: 1.2rem;
+    font-weight: normal;
 }
 
 .img_history_SENA::after {
-	content: '';
+    content: '';
     display: block;
     position: absolute;
     right: -15rem;
     height: 1px;
     width: 13rem;
-    top: calc(55.5% - 10px);
+    top: calc(58% - 10px);
     background-color: #666;
-    left: 19rem;
+    left: 22rem;
 }
 
-/* .img_history_RUTA::after {
-	content: "";
-	display: block;
-	border: 20px solid transparent;
-	border-left: 20px solid #fff;
-	position: absolute;
-	right: -50px;
-	top: calc(50% - 20px);
-} */
+.img_history_RUTA::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -15rem;
+    height: 1px;
+    width: 10rem;
+    top: calc(52% - 10px);
+    background-color: #666;
+    left: -10rem;
+}
+
+.img_history_HCJ::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -15rem;
+    height: 1px;
+    width: 13rem;
+    top: calc(54% - 10px);
+    background-color: #666;
+    left: 22rem;
+}
+
+.img_history_C0::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -15rem;
+    height: 1px;
+    width: 10rem;
+    top: calc(52% - 10px);
+    background-color: #666;
+    /* left: -20rem; */
+}
 
 .img_history_SENA img {
-	width: 11rem;
-	vertical-align: top;
-    margin-left: 5rem;
+    width: 8rem;
+    vertical-align: top;
+    margin-left: 11rem;
 }
 
 .img_history_RUTA img {
-	width: 10rem;
-	vertical-align: top;
+    width: 22rem;
+    vertical-align: top;
+    margin-right: 3rem;
+}
+
+.img_history_HCJ img {
+    width: 22rem;
+    vertical-align: top;
+    margin-right: 10rem;
+    top: 10rem;
+}
+
+.img_history_CO img {
+    width: 32rem;
+    vertical-align: top;
+    margin-right: -3rem;
+    top: 10rem;
 }
 
 .history:nth-child(even) {
-	flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .history:nth-child(even) .info {
-	justify-content: end;
+    justify-content: end;
 }
 
- .history:nth-child(even) .img_history_SENA::after {
-	content: "";
-	border: 20px solid transparent;
-	border-right: 20px solid #fff;
-	right: initial;
-	left: -50px;
+.date {
+    color: #666;
+    font-size: 0.8rem;
+    top: -1.5rem;
+    margin-right: 4.5rem;
 }
-
-/* .history:nth-child(even) .img_history_RUTA::after {
-	content: "";
-	border: 20px solid transparent;
-	border-right: 20px solid #fff;
-	right: initial;
-	left: -50px;
-}  */
 
 /*Fin del apartado Historia*/
 

@@ -11,11 +11,11 @@
 
   <body>
     <!--Aquí inicia el div que contiene la información principal-->
-    <div class="main_container">
+    <div class="main_container" id="home">
       <div class="background-image">
         <img src="../My portfolio/img/MainPicture.jpg" alt="Imagen de perfil" />
       </div>
-      <div class="introduction" id="home">
+      <div class="introduction">
         <h1>Soy César Negrón</h1>
         <div class="despcription">
           <h3>Un desarrollador Frontend</h3>
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="scroll-down">
-        <a href="#skills"
+        <a href="#navbar"
           ><img src="../My portfolio/icons/flecha.png" alt="Flecha hacia abajo"
         /></a>
       </div>
@@ -34,7 +34,7 @@
     <!--Aquí termina el div que contiene la información principal-->
 
     <!--Aquí empieza el Navbar-->
-    <nav class="Navbar" id="skills">
+    <nav class="Navbar" id="navbar">
       <h1 id="homeLink" class="home-link">César</h1>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -47,7 +47,7 @@
     <!--Aquí termina el Navbar-->
 
     <!--Aquí empieza el apartado de habilidades-->
-    <div class="welcome">
+    <div class="welcome" id="skills">
       <h1>HOLA Y BIENVENIDO</h1>
       <p>Explora mis Habilidades</p>
     </div>
@@ -156,6 +156,7 @@
           <div class="img_history_SENA" data-aos="fade-up">
             <img src="../My portfolio/img/Sena.png" alt="Logo Sena" />
           </div>
+          <p class="date">18/07/2022</p>
           <h3 class="info">
             Inicie el programa de formación: Análisis y desarrollo de software en el Sena.
           </h3>
@@ -169,7 +170,30 @@
           </div>
           <h3 class="info">
             Comenzamos estudiando las bases de la lógica de la programación.
-            Analizando la vida del programador y su día a día.
+            Aprendiendo sobre algoritmos y estructuras de datos básicas. 
+          </h3>
+        </div>
+        <div class="history">
+          <div class="img_history_HCJ" data-aos="fade-up">
+            <img
+              src="../My portfolio/img/HTML__CSS_y_Javascript.png"
+              alt="Imagen de HTML, CSS y JavaScript"
+            />
+          </div>
+          <h3 class="info">
+            Empezamos con los programas iniciales para poner en práctica la teoría.
+          </h3>
+        </div>
+        <div class="history">
+          <div class="img_history_CO" data-aos="fade-up">
+            <img
+              src="../My portfolio/img/Cofilm.jpeg"
+              alt="Inicio de la proyecto de MovieDB"
+            />
+          </div>
+          <h3 class="info">
+            Comienzo del proyecto Cofilm.
+            En este proyecto se puso en práctica el consumo de Apis, diseño y estructuración de un software.
           </h3>
         </div>
       </div>

@@ -3,6 +3,11 @@ document.getElementById("homeLink").addEventListener("click", function() {
 });
 
 document.querySelector('a[href="#skills"]').addEventListener('click', function(event) {
-  event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-  document.getElementById('skills').scrollIntoView({ behavior: 'smooth' }); // Desplaza suavemente hacia la sección de habilidades
+  event.preventDefault(); 
+  document.getElementById('skills').scrollIntoView({ behavior: 'smooth' }); 
+});
+
+document.querySelector('a[href="#history"]').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('history').scrollIntoView({ behavior: 'smooth' });
 });

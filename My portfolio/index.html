@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" href="../My portfolio/icons/codificacion.png" />
     <title>My portfolio</title>
   </head>
@@ -45,9 +46,7 @@
     </nav>
     <!--Aquí termina el Navbar-->
 
-    <!--Script para el hover y las transiciones-->
-    <script src="script.js"></script>
-
+    <!--Aquí empieza el apartado de habilidades-->
     <div class="welcome">
       <h1>HOLA Y BIENVENIDO</h1>
       <p>Explora mis Habilidades</p>
@@ -145,5 +144,48 @@
         </article>
       </div>
     </div>
+    <!--Aquí termina el apartado de habilidades-->
+
+    <!--Aquí empieza el apartado de historia-->
+    <div class="history_container" id="history">
+      <h2>Mi viaje en el mundo de la programación</h2>
+      <div class="small-line"></div>
+      <p>Mi educación y experiencia</p>
+      <div class="education_container">
+        <div class="history">
+          <div class="img_history_SENA" data-aos="fade-up">
+            <img src="../My portfolio/img/Sena.png" alt="Logo Sena" />
+          </div>
+          <h3 class="info">
+            Inicie el programa de formación: Análisis y desarrollo de software en el Sena.
+          </h3>
+        </div>
+        <div class="history">
+          <div class="img_history_RUTA" data-aos="fade-up">
+            <img
+              src="../My portfolio/img/Ruta_Aprendizaje.png"
+              alt="Imagen de ruta de aprendizaje del programador"
+            />
+          </div>
+          <h3 class="info">
+            Comenzamos estudiando las bases de la lógica de la programación.
+            Analizando la vida del programador y su día a día.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!--Aquí termina el apartado de historia-->
+
+    <!--Script para el hover y las transiciones-->
+    <script src="script.js"></script>
+    <!--Script para las transiciones del apartado History-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2500,
+        once: false,
+      });
+    </script>
   </body>
 </html>

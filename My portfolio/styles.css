@@ -253,7 +253,7 @@ ul li {
     height: 19rem;
     margin-left: -5rem;
     width: 21rem;
-    box-shadow: 0 8px 24px hsla(19, 100%, 40%, 0.15);
+    box-shadow: 0 8px 24px hsla(19, 87%, 53%, 1);
     margin-top: -2rem;
     border-radius: 20px;
 }
@@ -264,7 +264,7 @@ ul li {
     overflow: hidden;
     width: 21rem;
     height: 19rem;
-    box-shadow: 0 8px 24px hsla(241, 100%, 40%, 0.15);
+    box-shadow: 0 8px 24px hsla(212, 87%, 53%, 1);
     border-radius: 20px;
     margin-left: -12rem;
 }
@@ -275,7 +275,7 @@ ul li {
     overflow: hidden;
     height: 19rem;
     width: 21rem;
-    box-shadow: 0 8px 24px hsla(61, 100%, 40%, 0.15);
+    box-shadow: 0 8px 24px hsla(61, 87%, 53%, 1);
     border-radius: 20px;
     margin-left: -13rem;
 }
@@ -285,7 +285,51 @@ ul li {
     overflow: hidden;
     width: 21rem;
     height: 19rem;
-    box-shadow: 0 8px 24px hsla(207, 100%, 50%, 0.15);
+    box-shadow: 0 8px 24px hsla(207, 87%, 53%, 1);
+    border-radius: 20px;
+    margin-left: -13rem;
+    margin-top: -1.5rem;
+}
+
+.card__article_POSTGRES {
+    position: relative;
+    overflow: hidden;
+    width: 21rem;
+    height: 19rem;
+    box-shadow: 0 8px 24px hsla(212, 87%, 53%, 1);
+    border-radius: 20px;
+    margin-left: -5rem;
+    margin-top: -1.5rem;
+}
+
+.card__article_MYSQL {
+    position: relative;
+    overflow: hidden;
+    width: 21rem;
+    height: 19rem;
+    box-shadow: 0 8px 24px hsla(210, 87%, 53%, 1);
+    border-radius: 20px;
+    margin-left: -12rem;
+    margin-top: -1.5rem;
+}
+
+.card__article_GITHUB {
+    position: relative;
+    overflow: hidden;
+    width: 21rem;
+    height: 19rem;
+    box-shadow: 0 8px 24px hsla(220, 40%, 20%, 1);
+    border-radius: 20px;
+    margin-left: -13rem;
+    margin-top: -1.5rem;
+}
+
+.card__article_GIT {
+    position: relative;
+    overflow: hidden;
+    width: 21rem;
+    height: 19rem;
+    box-shadow: 0 8px 24px hsla(19, 87%, 53%, 1);
     border-radius: 20px;
     margin-left: -13rem;
     margin-top: -1.5rem;
@@ -314,7 +358,7 @@ ul li {
     width: 11rem;
     height: 11rem;
     border-radius: 1.5rem;
-    margin-left: 4.7rem;
+    margin-left: 5rem;
     margin-top: 1rem;
 }
 
@@ -322,7 +366,39 @@ ul li {
     width: 11rem;
     height: 11rem;
     border-radius: 1.5rem;
-    margin-left: 5.5rem;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.card__img_POSTGRES {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 1.5rem;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.card__img_MYSQL {
+    width: 18rem;
+    height: 11rem;
+    border-radius: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card__img_GITHUB {
+    width: 12rem;
+    height: 11rem;
+    border-radius: 1.5rem;
+    margin-left: 4.3rem;
+    margin-top: 1rem;
+}
+
+.card__img_GIT {
+    width: 12rem;
+    height: 11rem;
+    border-radius: 1.5rem;
+    margin-left: 4.3rem;
     margin-top: 1rem;
 }
 
@@ -371,9 +447,59 @@ ul li {
 
 .card__data_REACT {
     width: 260px;
-    /* background-color: var(--container-color); */
     padding: 1.5rem 2rem;
-    /* box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15); */
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -5.8rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.card__data_POSTGRES {
+    width: 260px;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -5.8rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.card__data_MYSQL {
+    width: 260px;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -5.8rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.card__data_GITHUB {
+    width: 260px;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -5.8rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.card__data_GIT {
+    width: 260px;
+    padding: 1.5rem 2rem;
     border-radius: 1rem;
     position: absolute;
     bottom: -5.8rem;
@@ -434,6 +560,46 @@ ul li {
     animation: remove-overflow 2s forwards;
 }
 
+.card__article_POSTGRES:hover .card__data_POSTGRES {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card__article_POSTGRES:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.card__article_MYSQL:hover .card__data_MYSQL {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card__article_MYSQL:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.card__article_GITHUB:hover .card__data_GITHUB {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card__article_GITHUB:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.card__article_GIT:hover .card__data_GIT {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card__article_GIT:hover {
+    animation: remove-overflow 2s forwards;
+}
+
 .card__article_HTML:not(:hover) {
     animation: show-overflow 2s forwards;
 }
@@ -463,6 +629,38 @@ ul li {
 }
 
 .card__article_REACT:not(:hover) .card__data_REACT {
+    animation: remove-data 1s forwards;
+}
+
+.card__article_POSTGRES:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.card__article_POSTGRES:not(:hover) .card__data_POSTGRES {
+    animation: remove-data 1s forwards;
+}
+
+.card__article_MYSQL:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.card__article_MYSQL:not(:hover) .card__data_MYSQL {
+    animation: remove-data 1s forwards;
+}
+
+.card__article_GITHUB:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.card__article_GITHUB:not(:hover) .card__data_GITHUB {
+    animation: remove-data 1s forwards;
+}
+
+.card__article_GIT:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.card__article_GIT:not(:hover) .card__data_GIT {
     animation: remove-data 1s forwards;
 }
 
@@ -645,6 +843,138 @@ ul li {
     }
 }
 
+.progress_POSTGRES {
+    height: 0.5rem;
+    width: 6rem;
+    border-color: #000;
+    border-radius: 20px;
+    transform: scale(3);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #31648C;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.progress_POSTGRES::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(120deg, #31648C, #31648C);
+    background-size: 150% 150%;
+    height: 0.5rem;
+    width: 1%;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px #31648C;
+    animation: progress_POSTGRES 2s linear infinite;
+}
+
+@keyframes progress_POSTGRES {
+
+    50%,
+    100% {
+        width: 50%;
+    }
+}
+
+.progress_MYSQL {
+    height: 0.5rem;
+    width: 6rem;
+    border-color: #000;
+    border-radius: 20px;
+    transform: scale(3);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #09668E;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.progress_MYSQL::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(120deg, #09668E, #09668E);
+    background-size: 150% 150%;
+    height: 0.5rem;
+    width: 1%;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px #09668E;
+    animation: progress_MYSQL 2s linear infinite;
+}
+
+@keyframes progress_MYSQL {
+
+    50%,
+    100% {
+        width: 40%;
+    }
+}
+
+.progress_GITHUB {
+    height: 0.5rem;
+    width: 6rem;
+    border-color: #000;
+    border-radius: 20px;
+    transform: scale(3);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #080808;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.progress_GITHUB::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(120deg, #080808, #080808);
+    background-size: 150% 150%;
+    height: 0.5rem;
+    width: 1%;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px #080808;
+    animation: progress_GITHUB 2s linear infinite;
+}
+
+@keyframes progress_GITHUB {
+
+    50%,
+    100% {
+        width: 80%;
+    }
+}
+
+.progress_GIT {
+    height: 0.5rem;
+    width: 6rem;
+    border-color: #000;
+    border-radius: 20px;
+    transform: scale(3);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #F05539;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.progress_GIT::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(120deg, #F05539, #F05539);
+    background-size: 150% 150%;
+    height: 0.5rem;
+    width: 1%;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px #F05539;
+    animation: progress_GIT 2s linear infinite;
+}
+
+@keyframes progress_GIT {
+
+    50%,
+    100% {
+        width: 60%;
+    }
+}
+
 /*Fin de las barras de progreso de los lenguajes*/
 
 /*Responsive*/
@@ -671,6 +1001,26 @@ ul li {
     }
 
     .card__data_REACT {
+        width: 230px;
+        padding: 1rem;
+    }
+
+    .card__data_POSTGRES {
+        width: 230px;
+        padding: 1rem;
+    }
+
+    .card__data_MYSQL {
+        width: 230px;
+        padding: 1rem;
+    }
+
+    .card__data_GITHUB {
+        width: 230px;
+        padding: 1rem;
+    }
+
+    .card__data_GIT {
         width: 230px;
         padding: 1rem;
     }

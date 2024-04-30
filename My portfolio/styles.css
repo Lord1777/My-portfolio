@@ -188,10 +188,23 @@ ul li {
 .Navbar a {
     color: white;
     text-decoration: none;
+    position: relative;
 }
 
-.Navbar a:hover {
-    text-decoration: underline;
+.Navbar a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.Navbar a:hover::after {
+    transform: scaleX(1);
 }
 
 /*Aquí termina el Navbar*/
@@ -220,7 +233,6 @@ ul li {
 }
 
 .cards_container {
-    display: grid;
     margin-top: 4rem;
     margin-inline: 7rem;
     padding-block: 5rem;
@@ -228,9 +240,9 @@ ul li {
 
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5rem;
-    row-gap: 4rem;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 17rem;
+    row-gap: 5rem;
     margin-left: 7rem;
 }
 
@@ -239,18 +251,22 @@ ul li {
     position: relative;
     overflow: hidden;
     height: 19rem;
-    margin-left: -3rem;
-    width: 28rem;
-    /* box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15); */
+    margin-left: -5rem;
+    width: 21rem;
+    box-shadow: 0 8px 24px hsla(19, 100%, 40%, 0.15);
     margin-top: -2rem;
+    border-radius: 20px;
 }
 
 .card__article_CSS {
     position: relative;
     margin-top: -2rem;
     overflow: hidden;
-    width: 22.7rem;
-    /* box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15); */
+    width: 21rem;
+    height: 19rem;
+    box-shadow: 0 8px 24px hsla(241, 100%, 40%, 0.15);
+    border-radius: 20px;
+    margin-left: -12rem;
 }
 
 .card__article_JAVA {
@@ -258,17 +274,21 @@ ul li {
     margin-top: -1.8rem;
     overflow: hidden;
     height: 19rem;
-    /* box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15); */
+    width: 21rem;
+    box-shadow: 0 8px 24px hsla(61, 100%, 40%, 0.15);
+    border-radius: 20px;
+    margin-left: -13rem;
 }
 
 .card__article_REACT {
     position: relative;
-    margin-top: 3rem;
-    margin-left: -3.3rem;
     overflow: hidden;
+    width: 21rem;
     height: 19rem;
-    /* box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15); */
-    width: 28rem;
+    box-shadow: 0 8px 24px hsla(207, 100%, 50%, 0.15);
+    border-radius: 20px;
+    margin-left: -13rem;
+    margin-top: -1.5rem;
 }
 
 /*Contenedores individuales de cada lenguaje y framework*/
@@ -278,7 +298,7 @@ ul li {
 .card__img_HTML {
     width: 20rem;
     border-radius: 1.5rem;
-    margin-left: 4rem;
+    margin-left: 0.5rem;
     margin-top: 1.5rem;
 }
 
@@ -286,66 +306,62 @@ ul li {
     width: 11rem;
     height: 11rem;
     border-radius: 1.5rem;
-    margin-left: 5.8rem;
+    margin-left: 5rem;
     margin-top: 1.5rem;
 }
 
 .card__img_JAVA {
-    width: 13rem;
-    height: 13rem;
+    width: 11rem;
+    height: 11rem;
     border-radius: 1.5rem;
-    margin-left: 8rem;
+    margin-left: 4.7rem;
+    margin-top: 1rem;
 }
 
 .card__img_REACT {
-    width: 13rem;
-    height: 13rem;
+    width: 11rem;
+    height: 11rem;
     border-radius: 1.5rem;
-    margin-left: 7.5rem;
+    margin-left: 5.5rem;
+    margin-top: 1rem;
 }
 
 /*Imagenes de lenguajes*/
 
 .card__data_HTML {
-    width: 280px;
-    background-color: var(--container-color);
+    width: 260px;
     padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
     border-radius: 1rem;
     position: absolute;
-    bottom: -8rem;
+    bottom: -5.8rem;
     left: 0;
     right: 0;
     margin-inline: auto;
     opacity: 0;
     transition: opacity 1s 1s;
-    margin-left: 3.5rem;
+    margin-left: 0.4rem;
 }
 
 .card__data_CSS {
-    width: 280px;
-    background-color: var(--container-color);
+    width: 260px;
     padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
     border-radius: 1rem;
     position: absolute;
-    bottom: -7.5rem;
+    bottom: -5.8rem;
     left: 0;
     right: 0;
     margin-inline: auto;
     opacity: 0;
     transition: opacity 1s 1s;
-    margin-left: 0.65rem;
+    margin-left: 0.4rem;
 }
 
 .card__data_JAVA {
-    width: 280px;
-    background-color: var(--container-color);
+    width: 260px;
     padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
     border-radius: 1rem;
     position: absolute;
-    bottom: -8rem;
+    bottom: -5.8rem;
     left: 0;
     right: 0;
     margin-inline: auto;
@@ -354,13 +370,13 @@ ul li {
 }
 
 .card__data_REACT {
-    width: 280px;
-    background-color: var(--container-color);
+    width: 260px;
+    /* background-color: var(--container-color); */
     padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    /* box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15); */
     border-radius: 1rem;
     position: absolute;
-    bottom: -8rem;
+    bottom: -5.8rem;
     left: 0;
     right: 0;
     margin-inline: auto;
@@ -373,6 +389,7 @@ ul li {
     font-weight: 500;
     color: var(--title-color);
     margin-bottom: .75rem;
+    margin-left: -0.5rem;
 }
 
 /*Animaciones de los hover de las cartas*/
@@ -505,7 +522,7 @@ ul li {
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 10px #E34E26;
-    margin-left: 6rem;
+    margin-left: 5rem;
     margin-top: 1rem;
 }
 
@@ -538,7 +555,7 @@ ul li {
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 10px #2D54E5;
-    margin-left: 6rem;
+    margin-left: 5rem;
     margin-top: 1rem;
 }
 
@@ -571,7 +588,7 @@ ul li {
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 10px #EFD81D;
-    margin-left: 6rem;
+    margin-left: 5rem;
     margin-top: 1rem;
 }
 
@@ -604,7 +621,7 @@ ul li {
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 10px #1399C4;
-    margin-left: 6rem;
+    margin-left: 5rem;
     margin-top: 1rem;
 }
 
@@ -632,12 +649,6 @@ ul li {
 
 /*Responsive*/
 
-@media screen and (min-width:1120px) {
-    .cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-}
 
 @media screen and (max-width:340px) {
     .cards_container {
@@ -645,7 +656,22 @@ ul li {
     }
 
     .card__data_HTML {
-        width: 250px;
+        width: 230px;
+        padding: 1rem;
+    }
+
+    .card__data_CSS {
+        width: 230px;
+        padding: 1rem;
+    }
+
+    .card__data_JAVA {
+        width: 230px;
+        padding: 1rem;
+    }
+
+    .card__data_REACT {
+        width: 230px;
         padding: 1rem;
     }
 }

@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" href="../My portfolio/icons/codificacion.png" />
+    <script
+      src="https://kit.fontawesome.com/c73d3055a8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>My portfolio</title>
   </head>
 
@@ -26,9 +30,12 @@
         </div>
       </div>
       <div class="scroll-down">
-        <a href="#navbar"
-          ><img src="../My portfolio/icons/flecha.png" alt="Flecha hacia abajo"
-        /></a>
+        <a href="#navbar">
+          <img
+            src="../My portfolio/icons/flecha.png"
+            alt="Flecha hacia abajo"
+          />
+        </a>
       </div>
     </div>
     <!--Aquí termina el div que contiene la información principal-->
@@ -237,7 +244,27 @@
       <h1>CONTACTO CÉSAR</h1>
       <p>AQUÍ ESTOY</p>
     </div>
+    <div class="contacto">
+      <div class="icons">
+        <a href="https://github.com/Lord1777" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/c%C3%A9sar-negr%C3%B3n-vente-18a077240/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
 
+    <div class="scroll-up">
+      <img
+        src="../My portfolio/icons/flecha.png"
+        alt="Flecha hacia arriba"
+        onclick="scrollToTop()"
+      />
+    </div>
     <!--Aquí termina el apartado de contacto-->
 
     <!--Script para el hover y las transiciones-->
@@ -249,6 +276,15 @@
         duration: 2500,
         once: false,
       });
+    </script>
+    <!--Script para el retorno al inicio del portafolio-->
+    <script>
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
     </script>
   </body>
 </html>

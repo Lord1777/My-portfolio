@@ -149,13 +149,36 @@ html {
 /* Aquí termina el Scroll dowm(deslizar hacia abajo)*/
 
 /*Aquí empieza el Navbar*/
-.Navbar {
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 1.3rem 10%;
     background-color: #1A1A1A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #1A1A1A;
+    z-index: -1;
+}
+
+.Navbar {
     width: 100%;
     height: 3rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
     padding-top: 20px;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -167,35 +190,15 @@ html {
     z-index: 1000;
 }
 
-.Navbar h1 {
-    color: white;
-    font-size: 30px;
-    font-weight: 500;
-    cursor: pointer;
-    margin-top: -1rem;
-}
-
-ul li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.Navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    margin-top: -1rem;
-}
-
-.Navbar li {
-    margin-right: 20px;
-}
-
 .Navbar a {
     color: white;
     text-decoration: none;
     position: relative;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    cursor: pointer;
+    margin-top: -1rem;
 }
 
 .Navbar a::after {
@@ -212,6 +215,25 @@ ul li {
 
 .Navbar a:hover::after {
     transform: scaleX(1);
+}
+
+.home-link {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.icons{
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    right: 5%;
+}
+
+#check {
+    display: none;
 }
 
 /*Aquí termina el Navbar*/
@@ -1279,7 +1301,7 @@ ul li {
     margin-top: 2rem;
 }
 
-.icons {
+.icons-contact{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -1355,6 +1377,334 @@ ul li {
 /*Fin del apartado Contacto*/
 
 /*Responsive*/
+
+@media (max-width: 992px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    .icons #close-icon {
+        display:none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .Navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: #1A1A1A;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.Navbar {
+        height: 17.7rem;
+    }
+
+    .Navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    #check:checked~.Navbar a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+}
+
+@media (max-width: 375px) {
+
+    .main_container{
+        height: 42rem;
+    }
+
+    .main_container .background-image img {
+        height: 42rem;
+    }
+    /*IMAGEN PRINCIPAL*/
+
+    .introduction h1 {
+        font-size: 2rem;
+    }
+    /*MI NOMBRE*/
+
+    .phrase h4 {
+        font-size: 1rem;
+        width: 15rem;
+    }
+    /*Frase de inicio*/
+
+    .header {
+        height: 0.1rem;
+    }
+
+    .header .home-link {
+        margin-top: 1rem;
+    }
+
+    .header .icons {
+        margin-top: 1rem;
+    }
+    /*HEADER*/
+
+    .Navbar{
+        display: block;
+        height: 0.1rem;
+    }
+
+    #check:checked~.Navbar {
+        height: 13rem;
+    }
+    /*NAVBAR*/
+
+    .welcome h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcome p {
+        font-size: 0.8rem;
+    }
+    /*Titulo: HOLA Y BIENVENIDO*/
+
+    /*Cartas*/
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card__article_HTML {
+        width: 13rem;
+        height: 15rem;
+        margin-left: -6rem;
+    }
+
+    .card__img_HTML {
+        height: 8.5rem;
+        width: 15rem;
+        margin-left: -0.9rem;
+    }
+
+    .card__title {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    .progress_HTML {
+        width: 3rem;
+    }
+
+    .card__data_HTML {
+        top: 16rem;
+        margin-left: -1.8rem;
+    }
+    /*HTML*/
+
+    .card__article_CSS {
+        width: 13rem;
+        height: 15rem;
+        margin-left: -6rem;
+    }
+
+    .card__img_CSS {
+        height: 8.5rem;
+        width: 8rem;
+        margin-left: 2.5rem;
+    }
+
+    .progress_CSS {
+        width: 3rem;
+    }
+
+    .card__data_CSS {
+        top: 16rem;
+        margin-left: -1.8rem;
+    }
+    /*CSS*/
+
+    .card__article_JAVA {
+        width: 13rem;
+        height: 15rem;
+        margin-left: -6rem;
+    }
+
+    .card__img_JAVA {
+        height: 8.5rem;
+        width: 8rem;
+        margin-left: 2.5rem;
+    }
+
+    .progress_JAVA {
+        width: 3rem;
+    }
+
+    .card__data_JAVA {
+        top: 16rem;
+        margin-left: -1.8rem;
+    }
+    /*JAVA*/
+
+    .card__article_REACT {
+        width: 13rem;
+        height: 15rem;
+        margin-left: -6rem;
+    }
+
+    .card__img_REACT {
+        height: 6.5rem;
+        width: 8rem;
+        margin-left: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .progress_REACT {
+        width: 3rem;
+    }
+
+    .card__data_REACT {
+        top: 16rem;
+        margin-left: -1.8rem;
+    }
+    /*REACT*/
+
+    .card__article_POSTGRES {
+        width: 13rem;
+        height: 15rem;
+        margin-left: -6rem;
+    }
+
+    .card__img_POSTGRES {
+        height: 6.5rem;
+        width: 8rem;
+        margin-left: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .progress_POSTGRES {
+        width: 3rem;
+    }
+
+    .card__data_POSTGRES {
+        top: 16rem;
+        margin-left: -1.8rem;
+    }
+    /*POSTGRES*/
+
+    .card__article_MYSQL {
+        width: 13rem;
+        height: 15rem;
+        margin-left: -6rem;
+    }
+
+    .card__img_MYSQL {
+        height: 6.5rem;
+        width: 11rem;
+        margin-left: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    .progress_MYSQL {
+        width: 3rem;
+    }
+
+    .card__data_MYSQL {
+        top: 16rem;
+        margin-left: -1.8rem;
+    }
+    /*MYSQL*/
+
+    .card__article_GITHUB {
+        width: 13rem;
+        height: 15rem;
+        margin-left: -6rem;
+    }
+
+    .card__img_GITHUB {
+        height: 6.5rem;
+        width: 7rem;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+
+    .progress_GITHUB {
+        width: 3rem;
+    }
+
+    .card__data_GITHUB {
+        top: 16rem;
+        margin-left: -1.8rem;
+    }
+    /*GITHUB*/
+
+    .card__article_GIT {
+        width: 13rem;
+        height: 15rem;
+        margin-left: -6rem;
+    }
+
+    .card__img_GIT {
+        height: 6.5rem;
+        width: 7rem;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+
+    .progress_GIT {
+        width: 3rem;
+    }
+
+    .card__data_GIT {
+        top: 16rem;
+        margin-left: -1.8rem;
+    }
+    /*GIT*/
+
+    .history_container h2 {
+        font-size: 1.7rem;
+        width: 18rem;
+        margin-left: -1rem;
+    }
+    /*Texto: MI VIAJE EN EL MUNDO DE LA PROGRAMACIÓN*/
+
+    .small-line {
+        margin-top: 101rem;
+    }
+    /*LINEA DE HABILIDADES*/
+
+    .container_contact h1{
+        font-size: 1.5rem;
+        width: 18rem;
+        margin-left: 2.5rem;
+    }
+
+    .scroll-up a img {
+        transform: rotate(360deg);
+        margin-left: -0.5rem;
+    }
+    /*CONTACTO*/
+}
 
 @media screen and (max-width:340px) {
     .cards_container {

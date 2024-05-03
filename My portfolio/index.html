@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" href="../My portfolio/icons/codificacion.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/c73d3055a8.js"
       crossorigin="anonymous"
@@ -41,15 +45,22 @@
     <!--Aquí termina el div que contiene la información principal-->
 
     <!--Aquí empieza el Navbar-->
-    <nav class="Navbar" id="navbar">
-      <h1 id="homeLink" class="home-link">César</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#history">Historia y Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-    </nav>
+    <header class="header">
+      <a id="homeLink" class="home-link">César</a>
+
+      <input type="checkbox" id="check" />
+      <label for="check" class="icons">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-x" id="close-icon"></i>
+      </label>
+      <nav class="Navbar" id="navbar">
+        <a href="#home" style="--i: 0">Home</a>
+        <a href="#skills" style="--i: 1">Habilidades</a>
+        <a href="#history" style="--i: 2">Historia y Proyectos</a>
+        <a href="#contact" style="--i: 3">Contacto</a>
+      </nav>
+    </header>
+
     <!--Aquí termina el Navbar-->
 
     <!--Aquí empieza el apartado de habilidades-->
@@ -206,10 +217,15 @@
         </div>
         <div class="history">
           <div class="img_history_CO" data-aos="fade-up">
-            <img
-              src="../My portfolio/img/Cofilm.jpeg"
-              alt="Inicio del proyecto MovieDB"
-            />
+            <a
+              href="https://cofilm-adso.netlify.app/paginas/peliculas"
+              target="_blank"
+            >
+              <img
+                src="../My portfolio/img/Cofilm.jpeg"
+                alt="Inicio del proyecto MovieDB"
+              />
+            </a>
           </div>
           <p class="date4">10/03/2023</p>
           <h3 class="info">
@@ -234,10 +250,12 @@
         </div>
         <div class="history">
           <div class="img_history_SP" data-aos="fade-up">
-            <img
-              src="../My portfolio/img/Proyecto SPH - CBI.jpeg"
-              alt="Inicio del proyecto SPH - CBI"
-            />
+            <a href="https://softwaresolutionsdev.com/" target="_blank">
+              <img
+                src="../My portfolio/img/Proyecto SPH - CBI.jpeg"
+                alt="Inicio del proyecto SPH - CBI"
+              />
+            </a>
           </div>
           <p class="date6">16/11/2023</p>
           <h3 class="info">
@@ -261,7 +279,7 @@
       <p>AQUÍ ESTOY</p>
     </div>
     <div class="contacto">
-      <div class="icons">
+      <div class="icons-contact">
         <a href="https://github.com/Lord1777" target="_blank">
           <i class="fab fa-github"></i>
         </a>
@@ -286,7 +304,7 @@
     <!--Aquí termina el apartado de contacto-->
 
     <!--Script para el hover y las transiciones-->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <!--Script para las transiciones del apartado History-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

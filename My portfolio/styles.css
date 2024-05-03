@@ -1123,10 +1123,10 @@ ul li {
     position: absolute;
     right: -10rem;
     height: 1px;
-    width: 4rem;
-    top: calc(54% - 10px);
+    width: 7rem;
+    top: calc(55.5% - 10px);
     background-color: #666;
-    left: -6rem;
+    left: -8rem;
 }
 
 .img_history_BS::after {
@@ -1147,10 +1147,10 @@ ul li {
     position: absolute;
     right: -10rem;
     height: 1px;
-    width: 2rem;
+    width: 6rem;
     top: calc(54% - 10px);
     background-color: #666;
-    left: -0.5rem;
+    left: -4rem;
 }
 
 .img_history_SENA img {
@@ -1173,9 +1173,9 @@ ul li {
 }
 
 .img_history_CO img {
-    width: 32rem;
+    width: 26rem;
     vertical-align: top;
-    margin-right: -3rem;
+    margin-left: 1rem;
     top: 10rem;
 }
 
@@ -1187,7 +1187,7 @@ ul li {
 }
 
 .img_history_SP img {
-    width: 32rem;
+    width: 29rem;
     vertical-align: top;
     margin-left: 3rem;
     top: 10rem;
@@ -1206,6 +1206,41 @@ ul li {
     font-size: 0.8rem;
     top: -1.5rem;
     margin-right: 4.5rem;
+}
+
+.date2 {
+    color: #666;
+    font-size: 0.8rem;
+    top: 10.5rem;
+    margin-right: -7rem;
+}
+
+.date3 {
+    color: #666;
+    font-size: 0.8rem;
+    top: 1.5rem;
+    margin-left: -17rem;
+}
+
+.date4 {
+    color: #666;
+    font-size: 0.8rem;
+    top: 0.8rem;
+    margin-left: 6.4rem;
+}
+
+.date5 {
+    color: #666;
+    font-size: 0.8rem;
+    top: 10.8rem;
+    margin-left: -5.2rem;
+}
+
+.date6 {
+    color: #666;
+    font-size: 0.8rem;
+    top: 1.3rem;
+    margin-right: -8.2rem;
 }
 
 /*Fin del apartado Historia*/
@@ -1275,44 +1310,46 @@ ul li {
 }
 
 .scroll-up {
+    bottom: 0;
+    cursor: pointer;
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
-    background: #1A1A1A;
-    height: 6.5rem;
-    bottom: 0;
+    align-items: center;
+    position: relative;
 }
 
-.scroll-up img {
-    color: #000;
-    margin-left: 5rem;
-    bottom: 20px;
+.scroll-up a {
+    display: block;
+    width: 5rem;
+    height: 6rem;
+    position: relative;
+    animation: scrollBounce 2s infinite;
+}
+
+.scroll-up a img {
+    color: #fff;
+    position: relative;
+    transform: translate(-50%, -50%);
     border-width: 0 3px 3px 0;
     padding: 2rem;
     display: block;
     width: 2rem;
-    height: 3rem;
-    animation: bounce 1s infinite ;
-    cursor: pointer;
-    transform: rotate(-90deg);
+    height: 2.5rem;
+    transform: rotate(1deg);
 }
 
-@keyframes bounce {
-    from {
-        transform: translateX(-50%) rotate(-90deg) translateY(0);
+@keyframes scrollBounce {
+    0% {
+        transform: translateY(0);
     }
 
-    to {
-        transform: translateX(-50%) rotate(-90deg) translateY(-10px);
+    50% {
+        transform: translateY(13px);
     }
-}
 
-.line.left {
-    transform: rotate(-45deg);
-}
-
-.line.right {
-    transform: rotate(45deg);
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /*Fin del apartado Contacto*/

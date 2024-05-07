@@ -224,7 +224,7 @@ html {
     font-weight: 500;
 }
 
-.icons{
+.icons {
     font-size: 2.8rem;
     color: #fff;
     cursor: pointer;
@@ -1045,7 +1045,7 @@ html {
     position: absolute;
     left: 0;
     right: 0;
-    top: 139.5rem;
+    top: 142rem;
     margin: 0 auto;
     height: 1px;
     width: 50px;
@@ -1094,7 +1094,7 @@ html {
     left: calc(50% - 9px);
 }
 
-.info {
+.info1 {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -1103,82 +1103,59 @@ html {
     font-weight: normal;
 }
 
-.img_history_SENA::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: -15rem;
-    height: 1px;
-    width: 13rem;
-    top: calc(58% - 10px);
-    background-color: #666;
-    left: 22rem;
+.info2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: calc(42% + 20px);
+    font-size: 1.2rem;
+    font-weight: normal;
 }
 
-.img_history_RUTA::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: -15rem;
-    height: 1px;
-    width: 10rem;
-    top: calc(52% - 10px);
-    background-color: #666;
-    left: -10rem;
+.info3 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: calc(42% + 20px);
+    font-size: 1.2rem;
+    font-weight: normal;
 }
 
-.img_history_HCJ::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: -15rem;
-    height: 1px;
-    width: 13rem;
-    top: calc(54% - 10px);
-    background-color: #666;
-    left: 22rem;
+.info4 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: calc(42% + 20px);
+    font-size: 1.2rem;
+    font-weight: normal;
 }
 
-.img_history_CO::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: -10rem;
-    height: 1px;
-    width: 7rem;
-    top: calc(55.5% - 10px);
-    background-color: #666;
-    left: -8rem;
+.info5 h3 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 30rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-left: 5rem;
+    margin-top: 13rem;
 }
 
-.img_history_BS::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: -10rem;
-    height: 1px;
-    width: 7rem;
-    top: calc(52.2% - 10px);
-    background-color: #666;
-    left: 28rem;
-}
-
-.img_history_SP::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: -10rem;
-    height: 1px;
-    width: 6rem;
-    top: calc(54% - 10px);
-    background-color: #666;
-    left: -4rem;
-}
+/* .history h3 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 30rem;
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-left: -3rem;
+} */
 
 .img_history_SENA img {
     width: 8rem;
     vertical-align: top;
     margin-left: 11rem;
+    margin-top: 0.5rem;
 }
 
 .img_history_RUTA img {
@@ -1226,43 +1203,43 @@ html {
 .date {
     color: #666;
     font-size: 0.8rem;
-    top: -1.5rem;
+    top: -0.5rem;
     margin-right: 4.5rem;
 }
 
 .date2 {
     color: #666;
     font-size: 0.8rem;
-    top: 10.5rem;
+    top: 11.5rem;
     margin-right: -7rem;
 }
 
 .date3 {
     color: #666;
     font-size: 0.8rem;
-    top: 1.5rem;
+    top: 2.7rem;
     margin-left: -17rem;
 }
 
 .date4 {
     color: #666;
     font-size: 0.8rem;
-    top: 0.8rem;
+    top: 1.5rem;
     margin-left: 6.4rem;
 }
 
 .date5 {
     color: #666;
     font-size: 0.8rem;
-    top: 10.8rem;
-    margin-left: -5.2rem;
+    top: 11.6rem;
+    margin-left: 15rem;
 }
 
 .date6 {
     color: #666;
     font-size: 0.8rem;
-    top: 1.3rem;
-    margin-right: -8.2rem;
+    top: 2.2rem;
+    margin-right: 5rem;
 }
 
 /*Fin del apartado Historia*/
@@ -1301,7 +1278,7 @@ html {
     margin-top: 2rem;
 }
 
-.icons-contact{
+.icons-contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -1394,7 +1371,7 @@ html {
     }
 
     .icons #close-icon {
-        display:none;
+        display: none;
     }
 
     #check:checked~.icons #close-icon {
@@ -1435,24 +1412,27 @@ html {
 
 @media (max-width: 375px) {
 
-    .main_container{
+    .main_container {
         height: 42rem;
     }
 
     .main_container .background-image img {
         height: 42rem;
     }
+
     /*IMAGEN PRINCIPAL*/
 
     .introduction h1 {
         font-size: 2rem;
     }
+
     /*MI NOMBRE*/
 
     .phrase h4 {
         font-size: 1rem;
         width: 15rem;
     }
+
     /*Frase de inicio*/
 
     .header {
@@ -1466,9 +1446,10 @@ html {
     .header .icons {
         margin-top: 1rem;
     }
+
     /*HEADER*/
 
-    .Navbar{
+    .Navbar {
         display: block;
         height: 0.1rem;
     }
@@ -1476,6 +1457,7 @@ html {
     #check:checked~.Navbar {
         height: 13rem;
     }
+
     /*NAVBAR*/
 
     .welcome h1 {
@@ -1485,6 +1467,7 @@ html {
     .welcome p {
         font-size: 0.8rem;
     }
+
     /*Titulo: HOLA Y BIENVENIDO*/
 
     /*Cartas*/
@@ -1520,6 +1503,7 @@ html {
         top: 16rem;
         margin-left: -1.8rem;
     }
+
     /*HTML*/
 
     .card__article_CSS {
@@ -1542,6 +1526,7 @@ html {
         top: 16rem;
         margin-left: -1.8rem;
     }
+
     /*CSS*/
 
     .card__article_JAVA {
@@ -1564,6 +1549,7 @@ html {
         top: 16rem;
         margin-left: -1.8rem;
     }
+
     /*JAVA*/
 
     .card__article_REACT {
@@ -1587,6 +1573,7 @@ html {
         top: 16rem;
         margin-left: -1.8rem;
     }
+
     /*REACT*/
 
     .card__article_POSTGRES {
@@ -1610,6 +1597,7 @@ html {
         top: 16rem;
         margin-left: -1.8rem;
     }
+
     /*POSTGRES*/
 
     .card__article_MYSQL {
@@ -1633,6 +1621,7 @@ html {
         top: 16rem;
         margin-left: -1.8rem;
     }
+
     /*MYSQL*/
 
     .card__article_GITHUB {
@@ -1656,6 +1645,7 @@ html {
         top: 16rem;
         margin-left: -1.8rem;
     }
+
     /*GITHUB*/
 
     .card__article_GIT {
@@ -1679,6 +1669,7 @@ html {
         top: 16rem;
         margin-left: -1.8rem;
     }
+
     /*GIT*/
 
     .history_container h2 {
@@ -1686,14 +1677,16 @@ html {
         width: 18rem;
         margin-left: -1rem;
     }
+
     /*Texto: MI VIAJE EN EL MUNDO DE LA PROGRAMACIÓN*/
 
     .small-line {
         margin-top: 101rem;
     }
+
     /*LINEA DE HABILIDADES*/
 
-    .container_contact h1{
+    .container_contact h1 {
         font-size: 1.5rem;
         width: 18rem;
         margin-left: 2.5rem;
@@ -1703,7 +1696,128 @@ html {
         transform: rotate(360deg);
         margin-left: -0.5rem;
     }
+
     /*CONTACTO*/
+
+    /*MI VIAJE POR EL MUNDO DE LA PROGRAMACIÓN*/
+    .education_container::after {
+        display: none;
+    }
+
+    .history::after {
+        display: none;
+    }
+
+    .img_history_SENA img {
+        width: 6.5rem;
+        margin-left: 4rem;
+    }
+
+    .small-line {
+        top: 122rem;
+    }
+
+    .date {
+        top: 5.5rem;
+        margin-left: -6.5rem;
+    }
+
+    .info1 {
+        margin-left: -14rem;
+        margin-top: 14rem;
+        font-size: 1.1rem;
+        width: 14rem;
+    }
+
+    .img_history_RUTA img {
+        width: 10rem;
+        margin-left: -12rem;
+        margin-top: -9rem;
+    }
+
+    .date2 {
+        top: 5rem;
+        margin-left: -22rem;
+    }
+
+    .info2 {
+        margin-left: -0.3rem;
+        margin-top: 14rem;
+        font-size: 1.1rem;
+        width: 14rem;
+    }
+
+    .img_history_HCJ img {
+        width: 15rem;
+        margin-left: -0.5rem;
+        margin-top: -8rem;
+    }
+
+    .date3 {
+        top: 0;
+        margin-left: -20rem;
+    }
+
+    .info3 {
+        margin-left: -9rem;
+        margin-top: 9rem;
+        font-size: 1.1rem;
+        width: 13rem;
+    }
+
+    .img_history_CO img {
+        width: 15rem;
+        margin-left: -14.5rem;
+        margin-top: -7rem;
+    }
+
+    .date4 {
+        top: -1rem;
+        margin-left: -15rem;
+    }
+
+    .info4 {
+        margin-left: 0rem;
+        margin-top: 7rem;
+        font-size: 1.1rem;
+        width: 14rem;
+    }
+
+    .img_history_BS img {
+        width: 17rem;
+        margin-left: -1.5rem;
+        margin-top: -7rem;
+    }
+
+    .date5 {
+        top: 9rem;
+        margin-left: -12rem;
+    }
+
+    .info5 h3 {
+        margin-left: -9rem;
+        margin-top: 17rem;
+        font-size: 1.1rem;
+        width: 14rem;
+    }
+
+    .img_history_SP img {
+        width: 14rem;
+        vertical-align: top;
+        margin-left: 6rem;
+    }
+
+    .date6 {
+        top: 5rem;
+        margin-left: -12rem;
+    }
+
+    .date6 h3{
+        margin-left: 0rem;
+        font-size: 1.1rem;
+        width: 0rem;
+        margin-top: 11rem;
+    }
 }
 
 @media screen and (max-width:340px) {

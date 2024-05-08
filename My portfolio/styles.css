@@ -150,7 +150,7 @@ html {
 
 /*Aquí empieza el Navbar*/
 
-.header {
+.Header {
     position: relative;
     top: 0;
     left: 0;
@@ -160,9 +160,19 @@ html {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: all 0.3s ease;
 }
 
-.header::before {
+.Header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    z-index: 1000; 
+    background-color: #1A1A1A;
+}
+
+.Header::before {
     content: '';
     position: absolute;
     top: 0;
@@ -175,19 +185,13 @@ html {
 
 .Navbar {
     width: 100%;
-    height: 3rem;
+    height: 2rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-top: 20px;
     font-weight: 500;
     transition: all 0.3s ease;
-}
-
-.Navbar.fixed {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
 }
 
 .Navbar a {
@@ -222,6 +226,7 @@ html {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .icons {
@@ -1141,15 +1146,15 @@ html {
     margin-top: 13rem;
 }
 
-/* .history h3 {
+.info6 h3 {
     display: flex;
     align-items: center;
     justify-content: start;
     width: 30rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: normal;
     margin-left: -3rem;
-} */
+}
 
 .img_history_SENA img {
     width: 8rem;
@@ -1356,7 +1361,7 @@ html {
 /*Responsive*/
 
 @media (max-width: 992px) {
-    .header {
+    .Header {
         padding: 1.3rem 5%;
     }
 }
@@ -1435,19 +1440,27 @@ html {
 
     /*Frase de inicio*/
 
-    .header {
+    .Header {
         height: 0.1rem;
     }
 
-    .header .home-link {
-        margin-top: 1rem;
+    .Header .home-link {
+        margin-top: 0;
     }
 
-    .header .icons {
-        margin-top: 1rem;
+    .Header .icons {
+        margin-top: 0;
     }
 
-    /*HEADER*/
+    .Header a {
+        height: 0.89rem;
+    }
+
+    .Header i {
+        margin-top: 1.3rem;
+    }
+
+    /*Header*/
 
     .Navbar {
         display: block;
@@ -1455,7 +1468,7 @@ html {
     }
 
     #check:checked~.Navbar {
-        height: 13rem;
+        height: 12rem;
     }
 
     /*NAVBAR*/
@@ -1481,7 +1494,7 @@ html {
     .card__article_HTML {
         width: 13rem;
         height: 15rem;
-        margin-left: -6rem;
+        margin-left: -6.5rem;
     }
 
     .card__img_HTML {
@@ -1509,7 +1522,7 @@ html {
     .card__article_CSS {
         width: 13rem;
         height: 15rem;
-        margin-left: -6rem;
+        margin-left: -6.5rem;
     }
 
     .card__img_CSS {
@@ -1532,7 +1545,7 @@ html {
     .card__article_JAVA {
         width: 13rem;
         height: 15rem;
-        margin-left: -6rem;
+        margin-left: -6.5rem;
     }
 
     .card__img_JAVA {
@@ -1555,7 +1568,7 @@ html {
     .card__article_REACT {
         width: 13rem;
         height: 15rem;
-        margin-left: -6rem;
+        margin-left: -6.5rem;
     }
 
     .card__img_REACT {
@@ -1579,7 +1592,7 @@ html {
     .card__article_POSTGRES {
         width: 13rem;
         height: 15rem;
-        margin-left: -6rem;
+        margin-left: -6.5rem;
     }
 
     .card__img_POSTGRES {
@@ -1603,7 +1616,7 @@ html {
     .card__article_MYSQL {
         width: 13rem;
         height: 15rem;
-        margin-left: -6rem;
+        margin-left: -6.5rem;
     }
 
     .card__img_MYSQL {
@@ -1627,7 +1640,7 @@ html {
     .card__article_GITHUB {
         width: 13rem;
         height: 15rem;
-        margin-left: -6rem;
+        margin-left: -6.5rem;
     }
 
     .card__img_GITHUB {
@@ -1651,7 +1664,7 @@ html {
     .card__article_GIT {
         width: 13rem;
         height: 15rem;
-        margin-left: -6rem;
+        margin-left: -6.5rem;
     }
 
     .card__img_GIT {

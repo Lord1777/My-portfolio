@@ -168,7 +168,7 @@ html {
     top: 0;
     left: 0;
     width: 80%;
-    z-index: 1000; 
+    z-index: 1000;
     background-color: #1A1A1A;
 }
 
@@ -1146,14 +1146,13 @@ html {
     margin-top: 13rem;
 }
 
-.info6 h3 {
-    display: flex;
-    align-items: center;
+.info6 {
     justify-content: start;
     width: 30rem;
     font-size: 1.2rem;
     font-weight: normal;
     margin-left: -3rem;
+    margin-top: 1rem;
 }
 
 .img_history_SENA img {
@@ -1571,6 +1570,7 @@ html {
         margin-left: -2.8rem;
     }
 }
+
 /*1280/////////////////////////////////////////////////////////////////////////////*/
 
 @media (max-width: 1024px) {
@@ -1784,6 +1784,7 @@ html {
         margin-left: -2.8rem;
     }
 }
+
 /*1024///////////////////////////////////////////////////////////////////////////////////*/
 
 @media (max-width: 992px) {
@@ -1791,6 +1792,7 @@ html {
         padding: 1.3rem 5%;
     }
 }
+
 /*992///////////////////////////////////////////////////////////////////////////////*/
 
 @media (max-width:853px) {
@@ -2004,6 +2006,7 @@ html {
         margin-left: -2.8rem;
     }
 }
+
 /*853//////////////////////////////////////////////////////////////////////////////*/
 
 @media (max-width: 820px) {
@@ -2206,6 +2209,7 @@ html {
         margin-left: -1.8rem;
     }
 }
+
 /*820//////////////////////////////////////////////////////////////////////////////*/
 
 @media (max-width: 768px) {
@@ -2455,6 +2459,7 @@ html {
         margin-left: -1.8rem;
     }
 }
+
 /*768//////////////////////////////////////////////////////////////////////////////*/
 
 @media (max-width: 540px) {
@@ -2658,6 +2663,7 @@ html {
         margin-left: -1.8rem;
     }
 }
+
 /*540//////////////////////////////////////////////////////////////////////////////*/
 
 @media (max-width: 430px) {
@@ -2860,9 +2866,47 @@ html {
         margin-left: -1.8rem;
     }
 }
+
 /*430//////////////////////////////////////////////////////////////////////////////*/
 
 @media (max-width: 414px) {
+
+    .Header {
+        height: 2.1rem;
+    }
+
+    .Header.fixed {
+        width: 70%;
+    }
+
+    .Header .home-link {
+        margin-top: 0;
+    }
+
+    .Header .icons {
+        margin-top: 0;
+    }
+
+    .Header a {
+        height: 0.89rem;
+    }
+
+    .Header i {
+        margin-top: 1.3rem;
+    }
+
+    /*Header*/
+
+    .Navbar {
+        display: block;
+        height: -0.15rem;
+    }
+
+    #check:checked~.Navbar {
+        height: 12rem;
+    }
+
+    /*NAVBAR*/
 
     .cards {
         display: grid;
@@ -3062,7 +3106,136 @@ html {
         top: 16rem;
         margin-left: -1.8rem;
     }
+
+    .education_container::after {
+        display: none;
+    }
+
+    .history::after {
+        display: none;
+    }
+
+    .img_history_SENA img {
+        width: 6.5rem;
+        margin-left: 5rem;
+    }
+
+    .small-line {
+        top: 122rem;
+    }
+
+    .date {
+        top: 5.5rem;
+        margin-left: -7.5rem;
+    }
+
+    .info1 {
+        margin-left: -15rem;
+        margin-top: 14rem;
+        font-size: 1.1rem;
+        width: 14rem;
+        text-align: center;
+    }
+
+    .img_history_RUTA img {
+        width: 10rem;
+        margin-left: -12rem;
+        margin-top: -9rem;
+    }
+
+    .date2 {
+        top: 5rem;
+        margin-left: -21rem;
+    }
+
+    .info2 {
+        margin-left: -0.3rem;
+        margin-top: 14rem;
+        font-size: 1.1rem;
+        width: 14rem;
+        text-align: center;
+    }
+
+    .img_history_HCJ img {
+        width: 15rem;
+        margin-left: -0.5rem;
+        margin-top: -8rem;
+    }
+
+    .date3 {
+        top: 0;
+        margin-left: -23rem;
+    }
+
+    .info3 {
+        margin-left: -11rem;
+        margin-top: 9rem;
+        font-size: 1.1rem;
+        width: 13rem;
+        text-align: center;
+    }
+
+    .img_history_CO img {
+        width: 15rem;
+        margin-left: -14.5rem;
+        margin-top: -7rem;
+    }
+
+    .date4 {
+        top: -1rem;
+        margin-left: -15rem;
+    }
+
+    .info4 {
+        margin-left: 0.1rem;
+        margin-top: 7rem;
+        font-size: 1.1rem;
+        width: 14rem;
+        text-align: center;
+    }
+
+    .img_history_BS img {
+        width: 17rem;
+        margin-left: -1.5rem;
+        margin-top: -7rem;
+    }
+
+    .date5 {
+        top: 9rem;
+        margin-left: -12rem;
+    }
+
+    .info5 h3 {
+        margin-left: -10rem;
+        margin-top: 17rem;
+        font-size: 1.1rem;
+        width: 14rem;
+        text-align: center;
+    }
+
+    .img_history_SP img {
+        width: 14rem;
+        margin-left: -14rem;
+    }
+
+    .date6 {
+        top: 5rem;
+        margin-left: 3rem;
+    }
+
+    /*Problema por resolver//////////////*/
+    .info6 {
+        font-size: 1.1rem;
+        margin-top: 12rem;
+        text-align: center;
+    }
+    /*Problema por resolver//////////////*/
+
+    .history_container {
+        height: 285rem;
+    }
 }
+
 /*414//////////////////////////////////////////////////////////////////////////////*/
 @media (max-width: 390px) {
     .cards {
@@ -3264,6 +3437,7 @@ html {
         margin-left: -1.8rem;
     }
 }
+
 /*390//////////////////////////////////////////////////////////////////////////////*/
 
 @media (max-width: 375px) {
@@ -3288,6 +3462,7 @@ html {
         font-size: 1rem;
         width: 15rem;
     }
+
     /*Frase de inicio*/
 
     .Header {
@@ -3295,12 +3470,7 @@ html {
     }
 
     .Header.fixed {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
+        width: 71%;
     }
 
     .Header .home-link {
@@ -3353,7 +3523,7 @@ html {
     .card__article_HTML {
         width: 13rem;
         height: 15rem;
-        margin-left: -6.5rem;
+        margin-left: -7rem;
     }
 
     .card__img_HTML {
@@ -3381,7 +3551,7 @@ html {
     .card__article_CSS {
         width: 13rem;
         height: 15rem;
-        margin-left: -6.5rem;
+        margin-left: -7rem;
     }
 
     .card__img_CSS {
@@ -3404,7 +3574,7 @@ html {
     .card__article_JAVA {
         width: 13rem;
         height: 15rem;
-        margin-left: -6.5rem;
+        margin-left: -7rem;
     }
 
     .card__img_JAVA {
@@ -3427,7 +3597,7 @@ html {
     .card__article_REACT {
         width: 13rem;
         height: 15rem;
-        margin-left: -6.5rem;
+        margin-left: -7rem;
     }
 
     .card__img_REACT {
@@ -3451,7 +3621,7 @@ html {
     .card__article_POSTGRES {
         width: 13rem;
         height: 15rem;
-        margin-left: -6.5rem;
+        margin-left: -7rem;
     }
 
     .card__img_POSTGRES {
@@ -3475,7 +3645,7 @@ html {
     .card__article_MYSQL {
         width: 13rem;
         height: 15rem;
-        margin-left: -6.5rem;
+        margin-left: -7rem;
     }
 
     .card__img_MYSQL {
@@ -3499,7 +3669,7 @@ html {
     .card__article_GITHUB {
         width: 13rem;
         height: 15rem;
-        margin-left: -6.5rem;
+        margin-left: -7rem;
     }
 
     .card__img_GITHUB {
@@ -3523,7 +3693,7 @@ html {
     .card__article_GIT {
         width: 13rem;
         height: 15rem;
-        margin-left: -6.5rem;
+        margin-left: -7rem;
     }
 
     .card__img_GIT {
@@ -3541,6 +3711,7 @@ html {
         top: 16rem;
         margin-left: -1.8rem;
     }
+
     /*GIT*/
 
     .history_container h2 {
@@ -3598,6 +3769,7 @@ html {
         margin-top: 14rem;
         font-size: 1.1rem;
         width: 14rem;
+        text-align: center;
     }
 
     .img_history_RUTA img {
@@ -3608,7 +3780,7 @@ html {
 
     .date2 {
         top: 5rem;
-        margin-left: -22rem;
+        margin-left: -21rem;
     }
 
     .info2 {
@@ -3616,6 +3788,7 @@ html {
         margin-top: 14rem;
         font-size: 1.1rem;
         width: 14rem;
+        text-align: center;
     }
 
     .img_history_HCJ img {
@@ -3626,14 +3799,15 @@ html {
 
     .date3 {
         top: 0;
-        margin-left: -20rem;
+        margin-left: -23rem;
     }
 
     .info3 {
-        margin-left: -9rem;
+        margin-left: -11rem;
         margin-top: 9rem;
         font-size: 1.1rem;
         width: 13rem;
+        text-align: center;
     }
 
     .img_history_CO img {
@@ -3648,10 +3822,11 @@ html {
     }
 
     .info4 {
-        margin-left: 0rem;
+        margin-left: 0.1rem;
         margin-top: 7rem;
         font-size: 1.1rem;
         width: 14rem;
+        text-align: center;
     }
 
     .img_history_BS img {
@@ -3666,30 +3841,36 @@ html {
     }
 
     .info5 h3 {
-        margin-left: -9rem;
+        margin-left: -10rem;
         margin-top: 17rem;
         font-size: 1.1rem;
         width: 14rem;
+        text-align: center;
     }
 
     .img_history_SP img {
         width: 14rem;
-        vertical-align: top;
-        margin-left: 6rem;
+        margin-left: -14rem;
     }
 
     .date6 {
         top: 5rem;
-        margin-left: -12rem;
+        margin-left: 3rem;
     }
 
-    .date6 h3{
-        margin-left: 0rem;
+    /*Problema por resolver//////////////*/
+    .info6 {
         font-size: 1.1rem;
-        width: 0rem;
-        margin-top: 11rem;
+        margin-top: 12rem;
+        text-align: center;
+    }
+    /*Problema por resolver//////////////*/
+
+    .history_container {
+        height: 285rem;
     }
 }
+
 /*375//////////////////////////////////////////////////////////////////////////////*/
 
 @media (max-width: 360px) {
@@ -3892,6 +4073,7 @@ html {
         margin-left: -1.8rem;
     }
 }
+
 /*360//////////////////////////////////////////////////////////////////////////////*/
 @media (max-width: 344px) {
     .cards {
@@ -4093,6 +4275,7 @@ html {
         margin-left: -1.8rem;
     }
 }
+
 /*344//////////////////////////////////////////////////////////////////////////////*/
 
 @media (max-width:340px) {
@@ -4140,4 +4323,5 @@ html {
         padding: 1rem;
     }
 }
+
 /*340//////////////////////////////////////////////////////////////////////////////*/
